@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wax by Bia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    body {margin:0;font-family:'Poppins',sans-serif;background:linear-gradient(to bottom,#f8eaea,#ffffff);color:#6b4b4b;}
+    header{text-align:center;padding:100px 20px 60px;}
+    .brand{font-family:'Great Vibes',cursive;font-size:60px;color:#8b5e5e;}
+    .tagline{font-family:'Playfair Display',serif;font-style:italic;font-size:22px;margin-top:10px;}
+    section{padding:60px 20px;max-width:900px;margin:auto;text-align:center;opacity:0;transform:translateY(40px);transition:0.8s;}
+    section.show{opacity:1;transform:translateY(0);}
+    h2{font-family:'Playfair Display',serif;font-weight:400;margin-bottom:25px;}
+    .box{background:#fff;padding:30px;border-radius:25px;box-shadow:0 15px 40px rgba(0,0,0,0.06);margin-top:20px;}
+    .contact-btn{display:inline-block;margin:10px;padding:14px 28px;border-radius:30px;text-decoration:none;color:white;background:#8b5e5e;transition:0.3s;}
+    .contact-btn:hover{transform:translateY(-3px);}
+    .gallery img{width:100%;border-radius:20px;margin-top:15px;}
+    footer{text-align:center;padding:30px;font-size:14px;opacity:0.7;}
+  </style>
+</head>
+<body><header>
+  <div class="brand">Wax by Bia</div>
+  <div class="tagline">with love, always ♡</div>
+</header><section>
+  <h2>Servicii</h2>
+  <div class="box">
+    Epilare picioare • Epilare mâini • Axilă • Față • Stomac
+  </div>
+</section><section>
+  <h2>Program</h2>
+  <div class="box">Luni - Vineri: 15:00 – 20:00 (flexibil)</div>
+</section><section>
+  <h2>Locație</h2>
+  <div class="box">Deva • La domiciliu</div>
+</section><section>
+  <h2>Galerie</h2>
+  <div class="box gallery">
+    <img src="https://i.pinimg.com/736x/5f/2e/9b/5f2e9b7d3c9e7b6c8d9e3f2a1b4c5d6.jpg">
+    <img src="https://i.pinimg.com/736x/8c/4b/1f/8c4b1f9e7d2c6a4b5e8f9a1c2d3e4f5.jpg">
+    <img src="https://i.pinimg.com/736x/3a/9f/2c/3a9f2c1e8b7d6c5a4e3f2d1c9b8a7f6.jpg">
+  </div>
+</section><section>
+  <h2>Reviews</h2>
+  <div class="box">
+    „Super atentă și delicată, recomand!” ⭐⭐⭐⭐⭐<br><br>
+    „Atmosferă foarte cozy și curat!” ⭐⭐⭐⭐⭐<br><br>
+    „Revin sigur ❤️” ⭐⭐⭐⭐⭐
+  </div>
+</section><section>
+  <h2>Programează-te</h2>
+  <div class="box">
+    <p>Apasă mai jos pentru programare rapidă:</p>
+    <a class="contact-btn" href="https://wa.me/40734301512?text=Vreau%20programare">WhatsApp</a>
+    <a class="contact-btn" href="https://instagram.com">Instagram</a>
+  </div>
+</section><footer>
+  © 2026 Wax by Bia
+</footer><script>
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll", () => {
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100){
+      sec.classList.add("show");
+    }
+  });
+});
+</script></body>
+</html>
